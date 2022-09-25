@@ -1,0 +1,26 @@
+import random
+def temp(t):
+    if(t>36 and t<80):
+        print("alaram ring high")
+    elif(t>-7 and t<36):
+        print(t)
+    elif(t<-5):
+        print("alaram ring low")
+    print(t)
+
+def hum(h):
+    if(h>36 and h<80):
+        print("alaram ring high")
+    elif(h>-7 and h<36):
+        print(t)
+    elif(h<-5):
+        print("alaram ring low")
+    print(h)
+
+i=0
+while i<5:
+    h=random.randint(0,100)
+    t=random.randint(-40,50)
+    temp(t)
+    hum(h)
+    i+=1
